@@ -8,7 +8,7 @@
 
 	<div class="max-w-md p-4 bg-white border rounded-lg shadow-md sm:p-8 dark:bg-gray-800 dark:border-gray-700">
     <div class="flex items-center justify-between mb-4">
-        <h3 class="text-xl font-bold leading-none text-gray-900 dark:text-white">User Profile</h3>
+        <h3 class="text-xl font-bold leading-none text-center gray-900 cente dark:text-white">User Profile</h3>
 
    </div>
    <div class="flow-root">
@@ -17,15 +17,15 @@
                 <div class="flex items-center space-x-4">
 
                     <div class="flex-1 min-w-0">
-                        <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
-                            Neil Sims
+                        <p class="text-sm font-bold text-gray-900 truncate dark:text-white">
+                           Admission No
                         </p>
-                        <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                        {{-- <p class="text-sm text-gray-500 truncate dark:text-gray-400">
                             email@windster.com
-                        </p>
+                        </p> --}}
                     </div>
                     <div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
-                        $320
+                     CCS/123456/019
                     </div>
                 </div>
             </li>
@@ -34,14 +34,14 @@
 
                     <div class="flex-1 min-w-0">
                         <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
-                            Bonnie Green
+                            FULL NAME:
                         </p>
-                        <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                        {{-- <p class="text-sm text-gray-500 truncate dark:text-gray-400">
                             email@windster.com
-                        </p>
+                        </p> --}}
                     </div>
                     <div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
-                        $3467
+                         MWANGI JAMES MAINA
                     </div>
                 </div>
             </li>
@@ -50,14 +50,14 @@
 
                     <div class="flex-1 min-w-0">
                         <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
-                            Michael Gough
+                          PHONE NUMBER
                         </p>
-                        <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                        {{-- <p class="text-sm text-gray-500 truncate dark:text-gray-400">
                             email@windster.com
-                        </p>
+                        </p> --}}
                     </div>
                     <div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
-                        $67
+                       +2547123456
                     </div>
                 </div>
             </li>
@@ -66,14 +66,14 @@
 
                     <div class="flex-1 min-w-0">
                         <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
-                            Lana Byrd
+                           University Email :
                         </p>
-                        <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                        {{-- <p class="text-sm text-gray-500 truncate dark:text-gray-400">
                             email@windster.com
-                        </p>
+                        </p> --}}
                     </div>
                     <div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
-                        $367
+                     student.maseno.ac.ke
                     </div>
                 </div>
             </li>
@@ -82,14 +82,14 @@
 
                     <div class="flex-1 min-w-0">
                         <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
-                            Thomes Lean
+                           University Email Password
                         </p>
-                        <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                        {{-- <p class="text-sm text-gray-500 truncate dark:text-gray-400">
                             email@windster.com
-                        </p>
+                        </p> --}}
                     </div>
                     <div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
-                        $2367
+                        MaseNO12Kh
                     </div>
                 </div>
             </li>
