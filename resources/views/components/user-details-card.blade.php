@@ -7,7 +7,7 @@
 <div class="max-w-2xl mx-auto">
 
 	<div class="max-w-md p-4 bg-white border rounded-lg shadow-md sm:p-8 dark:bg-gray-800 dark:border-gray-700">
-    <div class="flex items-center justify-between mb-4">
+    <div class="flex items-center justify-between mt-3 ">
         <h3 class="text-xl font-bold leading-none text-center gray-900 cente dark:text-white">User Profile</h3>
 
    </div>
@@ -20,9 +20,7 @@
                         <p class="text-sm font-bold text-gray-900 truncate dark:text-white">
                            Admission No
                         </p>
-                        {{-- <p class="text-sm text-gray-500 truncate dark:text-gray-400">
-                            email@windster.com
-                        </p> --}}
+
                     </div>
                     <div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
                      CCS/123456/019
@@ -36,9 +34,7 @@
                         <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
                             FULL NAME:
                         </p>
-                        {{-- <p class="text-sm text-gray-500 truncate dark:text-gray-400">
-                            email@windster.com
-                        </p> --}}
+
                     </div>
                     <div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
                          MWANGI JAMES MAINA
@@ -52,9 +48,7 @@
                         <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
                           PHONE NUMBER
                         </p>
-                        {{-- <p class="text-sm text-gray-500 truncate dark:text-gray-400">
-                            email@windster.com
-                        </p> --}}
+
                     </div>
                     <div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
                        +2547123456
@@ -68,9 +62,7 @@
                         <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
                            University Email :
                         </p>
-                        {{-- <p class="text-sm text-gray-500 truncate dark:text-gray-400">
-                            email@windster.com
-                        </p> --}}
+
                     </div>
                     <div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
                      student.maseno.ac.ke
@@ -84,9 +76,7 @@
                         <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
                            University Email Password
                         </p>
-                        {{-- <p class="text-sm text-gray-500 truncate dark:text-gray-400">
-                            email@windster.com
-                        </p> --}}
+                    
                     </div>
                     <div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
                         MaseNO12Kh
