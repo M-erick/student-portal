@@ -1,5 +1,6 @@
 <?php
 
+use Barryvdh\DomPDF\FACADE\Pdf;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
@@ -22,5 +23,12 @@ Auth::routes();
 
 Route::get('/home', [\App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::view('/registration', 'layouts.semRegistration')->name('registration');
+
+Route::get('/Provisional-results', function () {
+     $pdf = PDF::loadView('transcript');
+    return $pdf->download('Transcript.pdf');
+})->name('pdf');
+// use this route as a button
+
 
 
