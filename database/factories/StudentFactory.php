@@ -17,11 +17,13 @@ class StudentFactory extends Factory
     {
         return [
             'First_name' => $this->faker->name(),
-            'Last_name' => $this->faker->name(),
+            // 'Last_name' => $this->faker->name(),
            'email' => $this->faker->unique()->safeEmail(),
-           'Admission_number'=>$this->faker->randomDigit(),
-            'created_at' => now(),
-            'updated_at' => now(),
+
+
+           'Admission_number'=>$this->faker->numerify('CCS/###/',$this->faker->year()), //expected admission be CCS/01234/2021
+            // 'created_at' => now(),
+            // 'updated_at' => now(),
 
         ];
     }
