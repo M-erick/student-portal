@@ -17,7 +17,10 @@ class CreateStudentsTable extends Migration
             $table->id('student_id');
             // $table->string('student_id');
             $table->string('First_name');
-            $table->string('Last_name');
+
+            // dropped the last name filled
+            // $table->dropColumn('Last_name');
+            // $table->string('Last_name');
             $table->string('Admission_number');
             $table->string('email')->unique();
 
