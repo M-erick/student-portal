@@ -12,13 +12,10 @@
 
 
     <div class="container mx-auto mt-4">
-        <div class="flex flex-col w-full mb-1 text-center">
-
-        </div>
-
         <div class="mt-10 md:mt-0 md:col-span-2">
 
-            <form action="#" method="POST">
+            <form action="{{ route('registration') }}" method="POST">
+                @csrf
                 <div class="overflow-hidden shadow sm:rounded-md">
                     <div class="px-2 py-8 bg-white sm:p-6">
                         <div class="col-span-6 sm:col-span-3">
@@ -157,21 +154,24 @@
 
                 </fieldset>
 
-        </div>
-        <div class="px-4 py-3 text-right bg-white sm:px-6">
-            <a href='{{ route('pdf') }}'
-                class="inline-flex justify-center w-24 px-4 py-2 mr-4 text-sm font-medium text-white bg-gray-600 border border-transparent rounded-md shadow-sm ring ring-gray-500 ring-offset-4 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-indigo-500">
-                result
-            </a>
-            <button type="submit"
-                class="inline-flex justify-center w-24 px-4 py-2 text-sm font-medium bg-indigo-600 border border-transparent rounded-md shadow-sm ring ring-indigo-500 ring-offset-4 hover:bg-indigo-700 text-whitefocus:outline-none focus:ring-2 focus:ring-indigo-500">
-                Save
-            </button>
 
+
+                <div class="px-4 py-3 text-right bg-white sm:px-6">
+                    <a href='{{ route('pdf') }}'
+                        class="inline-flex justify-center w-24 px-4 py-2 mr-4 text-sm font-medium text-white bg-gray-600 border border-transparent rounded-md shadow-sm ring ring-gray-500 ring-offset-4 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                        result
+                    </a>
+                    <button type="submit"
+                        class="inline-flex justify-center w-24 px-4 py-2 text-sm font-medium bg-indigo-600 border border-transparent rounded-md shadow-sm ring ring-indigo-500 ring-offset-4 hover:bg-indigo-700 text-whitefocus:outline-none focus:ring-2 focus:ring-indigo-500">
+                        Save
+                    </button>
+
+                </div>
+            </form>
         </div>
     </div>
+
 </div>
-</form>
 </div>
 </section>
 

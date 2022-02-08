@@ -28,6 +28,26 @@
                         </p>
                         @enderror
                     </div>
+                    
+                    {{-- Add  admission number --}}
+
+
+
+                    <div class="flex flex-wrap">
+                        <label for="admission" class="block text-gray-700 text-sm font-bold mb-2 sm:mb-4">
+                            {{ __('Admission') }}:
+                        </label>
+
+                        <input id="admission" type="text" class="form-input w-full @error('admission')  border-red-500 @enderror"
+                            name="admission" value="{{ old('admission') }}" required autocomplete="admission" autofocus>
+
+                        @error('admission')
+                        <p class="text-red-500 text-xs italic mt-4">
+                            {{ $message }}
+                        </p>
+                        @enderror
+                    </div>
+                    {{--  --}}
 
                     <div class="flex flex-wrap">
                         <label for="email" class="block text-gray-700 text-sm font-bold mb-2 sm:mb-4">
