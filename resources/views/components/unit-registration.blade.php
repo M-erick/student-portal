@@ -17,62 +17,10 @@
         </div>
 
         <div class="mt-10 md:mt-0 md:col-span-2">
+
             <form action="#" method="POST">
                 <div class="overflow-hidden shadow sm:rounded-md">
                     <div class="px-2 py-8 bg-white sm:p-6">
-                        <div class="grid grid-cols-6 gap-6">
-
-
-
-                            <div class="col-span-6 sm:col-span-3">
-                                <label for="last-name" class="block text-sm font-medium text-gray-700">Registration
-                                    date</label>
-                                <input type="text" name="last-name" placeholder="09/02/2021" id="last-name"
-                                    autocomplete="family-name"
-                                    class="block w-full px-3 py-2 mt-3 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
-
-                            </div>
-
-                            <div class="col-span-6 sm:col-span-3">
-                                <label for="last-name" class="block text-sm font-medium text-gray-700">Deadline
-                                    date</label>
-                                <input type="text" name="last-name" placeholder="09/02/2021" id="last-name"
-                                    autocomplete="family-name"
-                                    class="block w-full px-3 py-2 mt-3 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
-                            </div>
-
-
-                            <div class="col-span-6 sm:col-span-3">
-                                <label for="last-name" class="block text-sm font-medium text-gray-700">Email
-                                    address</label>
-                                <input type="text" name="last-name" placeholder="jamejame@gmail.com" id="last-name"
-                                    autocomplete="email"
-                                    class="block w-full px-3 py-2 mt-3 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
-                            </div>
-
-
-
-                            <div class="col-span-6 sm:col-span-3">
-                                <label for="country" class="block text-sm font-medium text-gray-700">
-                                    Gender</label>
-                                <select id="country" name="country" autocomplete="country"
-                                    class="block w-full px-3 py-2 mt-1 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
-                                    <option>Male</option>
-                                    <option>female</option>
-                                    <option>other</option>
-                                </select>
-                            </div>
-
-
-
-
-
-                        </div>
-
-
-
-
-
                         <div class="col-span-6 sm:col-span-3">
                             <label for="country" class="block text-sm font-medium text-gray-700">
                                 Department</label>
