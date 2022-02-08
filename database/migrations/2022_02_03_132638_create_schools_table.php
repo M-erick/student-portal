@@ -13,7 +13,7 @@ class CreateSchoolsTable extends Migration
      */
     public function up()
     {
-        Schema::create('school', function (Blueprint $table) {
+        Schema::create('schools', function (Blueprint $table) {
             $table->id('school_id');
             $table->string('school_name');
             $table->string('S_code');
@@ -23,7 +23,7 @@ class CreateSchoolsTable extends Migration
             ->references('student_id')
             ->on('students')
             ->onDelete('cascade');
-            
+
             $table->timestamps();
 
         });
@@ -36,6 +36,6 @@ class CreateSchoolsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('school');
+        Schema::dropIfExists('schools');
     }
 }
