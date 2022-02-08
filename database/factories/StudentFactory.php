@@ -21,7 +21,7 @@ class StudentFactory extends Factory
            'email' => $this->faker->unique()->safeEmail(),
 
 
-           'Admission_number'=>$this->faker->numerify('CCS/###/',$this->faker->year()), //expected admission be CCS/01234/2021
+           'Admission_number'=>$this->faker->numerify('CCS/###/2019'), //expected admission be CCS/01234/2021
             // 'created_at' => now(),
             // 'updated_at' => now(),
 
