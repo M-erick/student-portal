@@ -20,7 +20,7 @@ class CreateMSUCoursesTable extends Migration
 
             $table->foreign('school_id')
             ->references('school_id')
-            ->on('school')
+            ->on('schools')
             ->onDelete('cascade');
             $table->timestamps();
         });
