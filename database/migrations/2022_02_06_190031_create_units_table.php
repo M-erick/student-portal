@@ -15,13 +15,15 @@ class CreateUnitsTable extends Migration
     {
         Schema::create('units', function (Blueprint $table) {
             $table->id();
-            $table->string('unit_id');
-            // $table->string('course_id');
-            // $table->foreign('course_id')
-            // ->references('course_id')
-            // ->on('m_s_u_courses');
+            $table->string('unit_id')->unique();
+            $table->string('Unit_name');
+            $table->string('course_id');
+            $table->foreign('course_id')
+            ->references('course_id')
+            ->on('m_s_u_courses')
+            ->onDelete('cascade');
 
-            $table->timestamps();
+            // $table->timestamps();
         });
     }
 
