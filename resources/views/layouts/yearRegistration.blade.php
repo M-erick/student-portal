@@ -63,7 +63,7 @@
                         <div class="container mx-auto mt-4">
                             <div class="mt-10 md:mt-0 md:col-span-2">
 
-                                <form action="/registration" method="POST">
+                                <form action="/Yearregistration" method="POST">
                                     @csrf
                                     <div class="overflow-hidden shadow sm:rounded-md">
                                         <div class="px-2 py-8 bg-white sm:p-6">
@@ -71,18 +71,18 @@
                                             <div class="col-span-6 sm:col-span-3">
                                                 <label for="country" class="block text-sm font-medium text-gray-700">
                                                     Department</label>
-                                                <select id="country" name="country" autocomplete="country"
+                                                <select id="country" name="course" autocomplete="country"
                                                     class="block w-full px-3 py-2 mt-3 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
                                                     <option class="mt-2"> COMPUTER SCIENCE</option>
-                                                    {{-- <option>COMPUTER TECHNOLOGY</option>
-                                                    <option>INFORMATION TECHNOLOGY</option> --}}
+                                                    <option>COMPUTER TECHNOLOGY</option>
+                                                    <option>INFORMATION TECHNOLOGY</option>
                                                 </select>
                                             </div>
 
                                             <div class="col-span-6 sm:col-span-3">
                                                 <label for="country" class="block text-sm font-medium text-gray-700">
                                                     Year Registration</label>
-                                                <select id="country" name="country" autocomplete="country"
+                                                <select id="country" name="year" autocomplete="country"
                                                     class="block w-full px-3 py-2 mt-3 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
                                                     <option class="mt-2"> YEAR 1</option>
                                                     <option>YEAR 2</option>
@@ -95,7 +95,8 @@
                                             <div class="col-span-6 sm:col-span-3">
                                                 <label for="country" class="block text-sm font-medium text-gray-700">
                                                     Semester Registration </label>
-                                                <select id="country" name="country" autocomplete="country"
+
+                                                <select id="country" name="semester" autocomplete="country"
                                                     class="block w-full px-3 py-2 mt-3 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
                                                     <option class="mt-2">SEM 1</option>
                                                     <option>SEM 2</option>

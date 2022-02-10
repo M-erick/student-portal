@@ -55,6 +55,8 @@ class RegisterYearController extends Controller
             'semester' =>$request->input('semester')
 
         ]);
+        return redirect('/home')
+        ->with('Success','Academic Registration posted');
 
     }
 
