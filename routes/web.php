@@ -5,6 +5,8 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\UnitController;
+use App\Http\Controllers\RegisterYearController;
+use App\Http\Controllers\RegisteredUnitController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,6 +27,10 @@ Auth::routes();
 Route::get('/home', [\App\Http\Controllers\HomeController::class, 'index'])->name('home');
 // Route::view('/registration', 'layouts.semRegistration')->name('registration');
 Route::resource('/registration', '\App\Http\Controllers\UnitController');
+Route::resource('/Yearregistration','\App\Http\Controllers\RegisterYearController');
+
+// Route::view('/Yearregistration', 'layouts.yearRegistration');
+
 
 Route::get('/Provisional-results', function () {
      $pdf = PDF::loadView('transcript');

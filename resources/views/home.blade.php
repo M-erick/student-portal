@@ -30,14 +30,21 @@
                                 <li>
 
                                     <a class="flex items-center justify-center p-2 mx-auto mb-3 cursor-pointer hover:underline"
-                                        href="{{ route('registration') }}">Register</a>
+                                        href="/registration">Register</a>
                                 </li>
                                 <li>
                                     <a class="flex items-center justify-center p-2 mx-auto mb-3 cursor-pointer hover:underline"
-                                        href="{{ route('registration') }}">RESULTS</a>
+                                        href="/registration">RESULTS</a>
 
 
                                 </li>
+                                <li>
+                                    <a class="flex items-center justify-center p-2 mx-auto mb-3 cursor-pointer hover:underline"
+                                        href="/registration">REGISTER SEMESTER</a>
+
+
+                                </li>
+
                                 <li
                                     class="flex items-center justify-center p-2 mb-3 bg-yellow-400 rounded-md cursor-pointer">
                                     <i class="text-white fas fa-headphones fa-sm"></i>
