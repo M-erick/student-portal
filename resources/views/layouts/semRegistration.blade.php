@@ -54,7 +54,7 @@
                     <!--End Topbar -->
                     <main class="relative z-0 flex-1 px-6 pb-8 bg-white">
 
-                        <x-unitregistration/>
+                        {{-- <x-unitregistration/> --}}
 
 
                         <div>
@@ -81,35 +81,19 @@
                                                 <div class="col-span-6 sm:col-span-3">
                                                     <label for="country" class="block text-sm font-medium text-gray-700">
                                                         Department</label>
-                                                    <select id="country" name="country" autocomplete="country"
-                                                        class="block w-full px-3 py-2 mt-3 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
-                                                        <option class="mt-2"> COMPUTER SCIENCE</option>
-                                                        {{-- <option>COMPUTER TECHNOLOGY</option>
-                                                        <option>INFORMATION TECHNOLOGY</option> --}}
-                                                    </select>
+
                                                 </div>
 
                                                 <div class="col-span-6 sm:col-span-3">
                                                     <label for="country" class="block text-sm font-medium text-gray-700">
                                                         Year Registration</label>
-                                                    <select id="country" name="country" autocomplete="country"
-                                                        class="block w-full px-3 py-2 mt-3 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
-                                                        <option class="mt-2"> YEAR 1</option>
-                                                        <option>YEAR 2</option>
-                                                        <option>YEAR 3</option>
-                                                        <option>YEAR 4</option>
 
-                                                    </select>
                                                 </div>
 
                                                 <div class="col-span-6 sm:col-span-3">
                                                     <label for="country" class="block text-sm font-medium text-gray-700">
                                                         Semester Registration </label>
-                                                    <select id="country" name="country" autocomplete="country"
-                                                        class="block w-full px-3 py-2 mt-3 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
-                                                        <option class="mt-2">SEM 1</option>
-                                                        <option>SEM 2</option>
-                                                    </select>
+
                                                 </div>
 
                                             </div>
