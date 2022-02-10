@@ -4,6 +4,7 @@ use Barryvdh\DomPDF\FACADE\Pdf;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\UnitController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,7 +23,8 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [\App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::view('/registration', 'layouts.semRegistration')->name('registration');
+// Route::view('/registration', 'layouts.semRegistration')->name('registration');
+Route::resource('/registration', '\App\Http\Controllers\UnitController');
 
 Route::get('/Provisional-results', function () {
      $pdf = PDF::loadView('transcript');
