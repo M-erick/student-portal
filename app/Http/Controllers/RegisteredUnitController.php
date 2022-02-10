@@ -2,11 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Units;
-use App\Models\MSUUnits;
 use Illuminate\Http\Request;
 
-class UnitController extends Controller
+class RegisteredUnitController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,11 +13,7 @@ class UnitController extends Controller
      */
     public function index()
     {
-
-        $data = MSUUnits::all();
-
-        // dd($data);
-       return view('layouts.semRegistration',['data' =>$data]);
+        // return view('layouts.yearRegistration');
     }
 
     /**
@@ -40,7 +34,13 @@ class UnitController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
+        $this->validate($request ,[
+            'course' =>'required',
+            'year' =>'required',
+            'semester' =>'required'
+
+        ]);
     }
 
     /**

@@ -14,11 +14,12 @@ class CreateSchoolsTable extends Migration
     public function up()
     {
         Schema::create('schools', function (Blueprint $table) {
-            $table->id('school_id');
+            $table->id();
+            $table->string('school_code')->unique();
             $table->string('school_name');
-            $table->string('S_code');
+            // $table->string('S_code');
 
-            $table->unsignedBigInteger('students_id');
+            $table->string('students_id');
             $table->foreign('students_id')
             ->references('student_id')
             ->on('students')

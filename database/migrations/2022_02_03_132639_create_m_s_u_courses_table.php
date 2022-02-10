@@ -16,12 +16,12 @@ class CreateMSUCoursesTable extends Migration
         Schema::create('m_s_u_courses', function (Blueprint $table) {
             $table->id();
             $table->string('course_id')->unique();
-            $table->unsignedBigInteger('school_id');
+            // $table->string('school_code');
 
-            $table->foreign('school_id')
-            ->references('school_id')
-            ->on('schools')
-            ->onDelete('cascade');
+            // $table->foreign('school_code')
+            // ->references('school_code')
+            // ->on('schools')
+            // ->onDelete('cascade');
             $table->timestamps();
         });
     }
