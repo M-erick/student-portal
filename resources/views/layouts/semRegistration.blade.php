@@ -103,6 +103,15 @@
                                         <fieldset class="mt-8 ">
                                             <legend class=" text-base  text-1.5xl font-medium text-gray-900">Units</legend>
                                             <div class="mt-2 space-y-4">
+                                                {{-- @foreach ($data as $datas )
+
+
+                                                @if ()
+
+                                                @endif
+
+
+                                                @endforeach --}}
 
                                                 <div class="flex place-items-center">
                                                     <div class="flex items-center h-5">
