@@ -16,6 +16,7 @@ class CreateMSUCoursesTable extends Migration
         Schema::create('m_s_u_courses', function (Blueprint $table) {
             $table->id();
             $table->string('course_id')->unique();
+            
             // $table->string('school_code');
 
             // $table->foreign('school_code')
