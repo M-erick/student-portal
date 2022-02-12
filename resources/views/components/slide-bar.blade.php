@@ -16,7 +16,6 @@
                 </div>
                 <p class="text-xs mt-1 text-center font-semibold">Dashboard</p>
             </div>
-            <!-- End Navitem -->
             <!-- Start Navitem -->
             <div
                 class="p-2 flex flex-col items-center bg-white rounded-md justify-center shadow-xl cursor-pointer">
