@@ -45,8 +45,6 @@ class RegisterYearController extends Controller
 
         ]);
 
-        // $post = new RegisterYear();
-        // $post->admission = auth()->user()->admission ;
         $post = RegisterYear::create([
 
             'admission' => auth()->user()->admission,

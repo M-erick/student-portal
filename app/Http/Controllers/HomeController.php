@@ -25,7 +25,6 @@ class HomeController extends Controller
     public function index()
     {
         $students = User::all();
-        // dd($student);
 
         return view('home',[
             'students'=>$students
