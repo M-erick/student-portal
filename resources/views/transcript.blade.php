@@ -10,6 +10,7 @@
 
 <body>
     {{-- <div>Transcript</div> --}}
+    {{-- fetch data from database and embed make pdf dynamic --}}
 
     <div class="top h-64 w-full bg-blue-600 overflow-hidden relative">
         {{-- <img src="{{ asset('images/logo (1).png')}}" alt="" class="bg w-full h-full object-cover object-center absolute z-0"> --}}
