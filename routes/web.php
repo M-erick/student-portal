@@ -25,7 +25,6 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [\App\Http\Controllers\HomeController::class, 'index'])->name('home');
-// Route::view('/registration', 'layouts.semRegistration')->name('registration');
 Route::resource('/registration', '\App\Http\Controllers\UnitController');
 Route::resource('/Yearregistration','\App\Http\Controllers\RegisterYearController');
 
