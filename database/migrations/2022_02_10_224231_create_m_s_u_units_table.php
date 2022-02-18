@@ -14,15 +14,17 @@ class CreateMSUUnitsTable extends Migration
     public function up()
     {
         Schema::create('m_s_u_units', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('unit_name');
             $table->string('unit_code')->unique();
-            $table->string('course_name');
-            $table->string('stage_id');
+            $table->string('unit_name');
+            $table->string('course_code');
+
+            $table->foreign('course_code')
+            ->references('course_code')
+            ->on('m_s_u_courses')
+            ->onDelete('cascade');
 
 
 
-            // $table->timestamps();
         });
     }
 
