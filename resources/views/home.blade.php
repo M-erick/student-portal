@@ -13,7 +13,7 @@
 
             <div class="flex w-full h-screen bg-gray-800 " x-data="{openMenu:1}">
                 <!--Start SideBar-->
-                <x-sidebar/>
+                <x-sidebar />
                 <!-- Start Open Menu -->
 
                 <!-- End Open Menu -->
