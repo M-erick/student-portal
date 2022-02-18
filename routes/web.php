@@ -28,7 +28,6 @@ Route::get('/home', [\App\Http\Controllers\HomeController::class, 'index'])->nam
 Route::resource('/registration', '\App\Http\Controllers\UnitController');
 Route::resource('/Yearregistration','\App\Http\Controllers\RegisterYearController');
 
-// Route::view('/Yearregistration', 'layouts.yearRegistration');
 
 
 Route::get('/Provisional-results', function () {

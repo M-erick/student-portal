@@ -54,14 +54,9 @@
                     <!--End Topbar -->
                     <main class="relative z-0 flex-1 px-6 pb-8 bg-white">
 
-                        {{-- <x-unitregistration/> --}}
-
 
                         <div>
-                            <!-- Well begun is half done. - Aristotle -->
 
-                            <!-- component -->
-                            <!-- This is an example component -->
                             <div
                                 class="w-full pt-2 overflow-hidden text-3xl font-bold text-center text-white bg-gray-700 shadow h-14 sm:rounded-md ">
                                 Unit Registration Form

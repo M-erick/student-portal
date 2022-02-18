@@ -8,6 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class MSUUnits extends Model
 {
     use HasFactory;
-    // UNSETS migrations default timestamps .
+    // UN SETS migrations default timestamps .
     public $timestamps = false ;
 }
