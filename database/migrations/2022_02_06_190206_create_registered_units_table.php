@@ -17,12 +17,8 @@ class CreateRegisteredUnitsTable extends Migration
 
             $table->string('admission');
             $table->string('unit_code');
-            $table->string('stage_code');
-
-            $table->foreign('unit_code')
-            ->references('unit_id')
-            ->on('units')
-            ->onDelete('cascade');
+            $table->string('Unit_name');
+           
         });
     }
 
