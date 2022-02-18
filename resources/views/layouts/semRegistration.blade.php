@@ -26,8 +26,9 @@
                         <!--Start NavItem -->
                         <div>
                             <ul class="px-4 mt-6 leading-10">
-                                <li >
-                                    <a class="flex items-center justify-center p-2 mx-auto mb-3 cursor-pointer hover:underline" href="{{ route('home') }}">Home</a>
+                                <li>
+                                    <a class="flex items-center justify-center p-2 mx-auto mb-3 cursor-pointer hover:underline"
+                                        href="{{ route('home') }}">Home</a>
 
 
                                 </li>
@@ -98,119 +99,24 @@
                                         <fieldset class="mt-8 ">
                                             <legend class=" text-base  text-1.5xl font-medium text-gray-900">Units</legend>
                                             <div class="mt-2 space-y-4">
-                                                {{-- @foreach ($data as $datas )
 
-
-                                                @if ()
-
-                                                @endif
-
-
-                                                @endforeach --}}
-
-                                                <div class="flex place-items-center">
-                                                    <div class="flex items-center h-5">
-                                                        <input id="comments" name="comments" type="checkbox"
-                                                            class="w-4 h-4 text-indigo-600 border-gray-300 rounded focus:ring-indigo-500">
-                                                    </div>
-                                                    <div class="ml-3 text-sm">
-                                                        <label for="comments" class="text-gray-700 font-regular"> <span class="font-bold">
-                                                                CCS301 </span> Principle Of Programming Language
-                                                        </label>
-
-                                                    </div>
-                                                </div>
-
-                                                <div class="flex items-start">
-                                                    <div class="flex items-center h-5">
-                                                        <input id="comments" name="comments" type="checkbox"
-                                                            class="w-4 h-4 text-indigo-600 border-gray-300 rounded focus:ring-indigo-500">
-                                                    </div>
-                                                    <div class="ml-3 text-sm">
-                                                        <label for="comments" class="text-gray-700 font-regular"> <span class="font-bold">
-                                                                CCS303 </span>Design And Analysis Of
-                                                            Algorithm</label>
-
-                                                    </div>
-                                                </div>
-
-                                                <div class="flex items-start">
-                                                    <div class="flex items-center h-5">
-                                                        <input id="comments" name="comments" type="checkbox"
-                                                            class="w-4 h-4 text-indigo-600 border-gray-300 rounded focus:ring-indigo-500">
-                                                    </div>
-                                                    <div class="ml-3 text-sm">
-                                                        <label for="comments" class="text-gray-700 font-regular"> <span class="font-bold">
-                                                                CCS305 </span>Intro To Compiler Construction And
-                                                            Design</label>
-
-                                                    </div>
-                                                </div>
-                                                <div class="flex items-start">
-                                                    <div class="flex items-center h-5">
-                                                        <input id="comments" name="comments" type="checkbox"
-                                                            class="w-4 h-4 text-indigo-600 border-gray-300 rounded focus:ring-indigo-500">
-                                                    </div>
-                                                    <div class="ml-3 text-sm">
-                                                        <label for="comments" class="text-gray-700 font-regular"> <span class="font-bold">
-                                                                CCS307 </span>Computer Network</label>
-
-                                                    </div>
-                                                </div>
-
-                                                <div class="flex items-start">
-                                                    <div class="flex items-center h-5">
-                                                        <input id="comments" name="comments" type="checkbox"
-                                                            class="w-4 h-4 text-indigo-600 border-gray-300 rounded focus:ring-indigo-500">
-                                                    </div>
-                                                    <div class="ml-3 text-sm">
-                                                        <label for="comments" class="text-gray-700 font-regular"> <span class="font-bold">
-                                                                CCS315 </span>Intelligent System</label>
-
-                                                    </div>
-                                                </div>
-
-
-                                                <div class="mt-2 space-y-4">
-
-                                                    <div class="flex items-start">
+                                                @foreach ($data as $datas)
+                                                    <div class="flex place-items-center">
                                                         <div class="flex items-center h-5">
                                                             <input id="comments" name="comments" type="checkbox"
                                                                 class="w-4 h-4 text-indigo-600 border-gray-300 rounded focus:ring-indigo-500">
                                                         </div>
                                                         <div class="ml-3 text-sm">
-                                                            <label for="comments" class="text-gray-700 font-mediuregular"> <span
-                                                                    class="font-bold"> CCS317 </span>Computer Networks Lab
-                                                                1(CISCO)</label>
+                                                            <label for="comments" class="text-gray-700 font-regular"> <span
+                                                                    class="font-bold">
+                                                                    {{ $datas->unit_code }}</span>
+                                                                {{ $datas->unit_name }}
+                                                            </label>
 
                                                         </div>
                                                     </div>
+                                                @endforeach
 
-                                                    <div class="flex items-start">
-                                                        <div class="flex items-center h-5">
-                                                            <input id="comments" name="comments" type="checkbox"
-                                                                class="w-4 h-4 text-indigo-600 border-gray-300 rounded focus:ring-indigo-500">
-                                                        </div>
-                                                        <div class="ml-3 text-sm">
-                                                            <label for="comments" class="text-gray-700 font-mediuregular"> <span
-                                                                    class="font-bold"> CCS323 </span>Group Project</label>
-
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="flex items-start">
-                                                        <div class="flex items-center h-5">
-                                                            <input id="comments" name="comments" type="checkbox"
-                                                                class="w-4 h-4 text-indigo-600 border-gray-300 rounded focus:ring-indigo-500">
-                                                        </div>
-                                                        <div class="ml-3 text-sm">
-                                                            <label for="comments" class="text-gray-700 font-mediuregular"> <span
-                                                                    class="font-bold"> CCS313 </span>Unix Operating System</label>
-
-                                                        </div>
-                                                    </div>
-
-                                                </div>
                                             </div>
 
 
@@ -220,10 +126,12 @@
 
 
                                         <div class="px-4 py-3 text-right bg-white sm:px-6">
-                                            <a href='{{ route('pdf') }}'
+                                            {{-- deal with pdf button later  --}}
+                                            
+                                            {{-- <a href='{{ route('pdf') }}'
                                                 class="inline-flex justify-center w-24 px-4 py-2 mr-4 text-sm font-medium text-white bg-gray-600 border border-transparent rounded-md shadow-sm ring ring-gray-500 ring-offset-4 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-indigo-500">
                                                 result
-                                            </a>
+                                            </a> --}}
                                             <button type="submit"
                                                 class="inline-flex justify-center w-24 px-4 py-2 text-sm font-medium bg-indigo-600 border border-transparent rounded-md shadow-sm ring ring-indigo-500 ring-offset-4 hover:bg-indigo-700 text-whitefocus:outline-none focus:ring-2 focus:ring-indigo-500">
                                                 Save
@@ -235,21 +143,12 @@
                             </div>
 
                         </div>
-                        </div>
-                        </section>
-
-                        <div class="hidden sm:block" aria-hidden="true">
-                            <div class="py-5">
-                                <div class=""></div>
-                            </div>
-                        </div>
-                        </div>
-
                     </main>
-
                 </div>
+
+
             </div>
         </div>
+
     </main>
 @endsection
-
