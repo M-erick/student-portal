@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\MSUUnits;
 use Illuminate\Http\Request;
+use App\Models\RegisteredUnits;
 
 class RegisteredUnitController extends Controller
 {
@@ -13,6 +15,11 @@ class RegisteredUnitController extends Controller
      */
     public function index()
     {
+
+        $data = MSUUnits::all();
+
+        // dd($data);
+       return view('layouts.semRegistration',['data' =>$data]);
         // return view('layouts.yearRegistration');
     }
 
@@ -36,11 +43,16 @@ class RegisteredUnitController extends Controller
     {
 
         $this->validate($request ,[
-            'course' =>'required',
-            'year' =>'required',
-            'semester' =>'required'
+           'unit'=>'required'
 
         ]);
+        $post = RegisteredUnits::create([
+            'admission' => auth()->user()->admission,
+            'Unit_name' =>$request->input('unit'),
+
+        ]);
+        return redirect('/home')
+        ->with('Success','Academic Registration posted');
     }
 
     /**

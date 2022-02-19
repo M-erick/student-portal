@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class RegisteredUnits extends Model
 {
     use HasFactory;
-    protected $fillable = ['admission','course','stage_code'];
+
+    protected $fillable = ['unit'];
 
 }
