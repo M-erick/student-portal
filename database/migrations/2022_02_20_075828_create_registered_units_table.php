@@ -14,11 +14,18 @@ class CreateRegisteredUnitsTable extends Migration
     public function up()
     {
         Schema::create('registered_units', function (Blueprint $table) {
-
-            $table->string('admission');
-            $table->string('unit_code');
-            $table->string('Unit_name');
-           
+            $table->increments('RegNumber');
+            $table->string('Admission');
+            $table->string('Unit_code');
+            $table->timestamps();
+            $table->foreign('Admission')
+                ->references('Admission')
+                ->on('students')
+                ->onDelete('cascade');
+            $table->foreign('Unit_code')
+                ->references('Unit_code')
+                ->on('units')
+                ->onDelete('cascade');
         });
     }
 

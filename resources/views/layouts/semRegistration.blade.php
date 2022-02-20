@@ -73,7 +73,7 @@
                                                     <div class="flex place-items-center">
                                                         <div class="flex items-center h-5">
 
-                                                            <input id="comments" name="unit" type="checkbox"
+                                                            <input id="comments" name="unit" type="checkbox" value="{{ $datas->unit_code }}"
                                                                 class="w-4 h-4 text-indigo-600 border-gray-300 rounded focus:ring-indigo-500">
                                                         </div>
                                                         <div class="ml-3 text-sm">

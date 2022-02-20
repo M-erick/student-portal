@@ -2,12 +2,20 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
+use App\Models\Department;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class School extends Model
 {
     use HasFactory;
-    public $timestamps = false ;
+    protected $primary = 'school_code';
+    protected $fillable = [
+        'school_code',
+        'school_name'
+    ];
 
+public function department() {
+    return $this->hasMany(Department::class);
+}
 }

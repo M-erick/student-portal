@@ -14,17 +14,10 @@ class CreateSchoolsTable extends Migration
     public function up()
     {
         Schema::create('schools', function (Blueprint $table) {
-            // $table->id();
-            $table->primary('school_code');
+            // $table->increments('id');
+            $table->string('school_code')->unique();
             $table->string('school_name');
-            // $table->string('students_id');
-
-            // $table->foreign('students_id')
-            // ->references('student_id')
-            // ->on('students')
-            // ->onDelete('cascade');
-
-
+            $table->timestamps();
         });
     }
 
