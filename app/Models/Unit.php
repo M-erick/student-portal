@@ -18,10 +18,11 @@ class Unit extends Model
         'Stage_code'
     ];
 
-    public function course()
+    public function courses()
     {
         return $this->belongsTo(course::class);
     }
+
     public function registeredUnits()
     {
         return $this->hasMany(RegisteredUnit::class);

@@ -13,7 +13,7 @@
 
             <div class="flex w-full h-screen bg-gray-800 " x-data="{openMenu:1}">
                 <!--Start SideBar-->
-                <x-sidebar/>
+                <x-sidebar />
                 <!-- Start Open Menu -->
 
                 <!-- End Open Menu -->
@@ -68,19 +68,31 @@
                                         <fieldset class="mt-8 ">
                                             <legend class=" text-base  text-1.5xl font-medium text-gray-900">Units</legend>
                                             <div class="mt-2 space-y-4">
+                                                {{-- {{ $data->course }} --}}
+                                                {{-- @forelse ($data as $item)
+                                                {{ $item['Course_code'] }}
+
+                                                @empty
+                                                <p>
+                                                    Empty
+                                                </p>
+
+                                                @endforelse --}}
+
 
                                                 @foreach ($data as $datas)
                                                     <div class="flex place-items-center">
                                                         <div class="flex items-center h-5">
 
-                                                            <input id="comments" name="unit" type="checkbox" value="{{ $datas->unit_code }}"
+                                                            <input id="comments" name="unit" type="checkbox"
+                                                                value="{{ $datas->unit_code }}"
                                                                 class="w-4 h-4 text-indigo-600 border-gray-300 rounded focus:ring-indigo-500">
                                                         </div>
                                                         <div class="ml-3 text-sm">
                                                             <label for="comments" class="text-gray-700 font-regular"> <span
                                                                     class="font-bold">
-                                                                    {{ $datas->unit_code }}</span>
-                                                                {{ $datas->unit_name }}
+                                                                    {{ $datas->Unit_code }}</span>
+                                                                {{ $datas->Unit_name }}
                                                             </label>
 
                                                         </div>
@@ -96,7 +108,7 @@
 
 
                                         <div class="px-4 py-3 text-right bg-white sm:px-6">
-                                            {{-- deal with pdf button later  --}}
+                                            {{-- deal with pdf button later --}}
 
                                             {{-- <a href='{{ route('pdf') }}'
                                                 class="inline-flex justify-center w-24 px-4 py-2 mr-4 text-sm font-medium text-white bg-gray-600 border border-transparent rounded-md shadow-sm ring ring-gray-500 ring-offset-4 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-indigo-500">

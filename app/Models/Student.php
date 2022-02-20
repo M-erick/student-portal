@@ -30,7 +30,8 @@ class Student extends Model
         return $this->hasMany(RegisteredUnit::class);
     }
 
-    public function results() {
+    public function results()
+    {
         return $this->hasMany(Result::class);
     }
 }
