@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\course;
 use App\Models\RegisterYear;
 use Illuminate\Http\Request;
 
@@ -14,8 +15,10 @@ class RegisterYearController extends Controller
      */
     public function index()
     {
-        //
-        return view('layouts.yearRegistration');
+        $course = course::all();
+
+        // dd($course);
+        return view('layouts.yearRegistration')->with('course',$course);
 
     }
 

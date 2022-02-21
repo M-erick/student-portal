@@ -12,7 +12,7 @@
             @endif
 
             <div class="flex w-full h-screen bg-gray-800 " x-data="{openMenu:1}">
-                
+
                 <x-sidebar/>
 
 
@@ -38,13 +38,19 @@
 
                                             <div class="col-span-6 sm:col-span-3">
                                                 <label for="country" class="block text-sm font-medium text-gray-700">
-                                                    Department</label>
-                                                <select id="country" name="course" autocomplete="country"
+                                                   Course</label>
+                                                    <select id="country" name="course" autocomplete="country"
                                                     class="block w-full px-3 py-2 mt-3 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
-                                                    <option class="mt-2"> COMPUTER SCIENCE</option>
-                                                    <option>COMPUTER TECHNOLOGY</option>
-                                                    <option>INFORMATION TECHNOLOGY</option>
+                                                    @foreach ($course as $courses)
+
+                                                    <option class="mt-2"> {{ $courses->Course_name }}</option>
+                                                    {{-- <option>COMPUTER TECHNOLOGY</option>
+                                                    <option>INFORMATION TECHNOLOGY</option> --}}
+                                                    @endforeach
+
                                                 </select>
+
+
                                             </div>
 
                                             <div class="col-span-6 sm:col-span-3">

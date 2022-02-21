@@ -11,6 +11,7 @@ class course extends Model
 {
     use HasFactory;
     protected $primary = 'Course_code';
+    
     protected $fillable = [
         'Course_code',
         'Course_name',
