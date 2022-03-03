@@ -20,17 +20,17 @@
                     <li>
 
                         <a class="flex items-center justify-center p-2 mx-auto mb-3 cursor-pointer hover:underline"
-                            href="/registration">Register</a>
+                            href="/student">Register</a>
                     </li>
                     <li>
                         <a class="flex items-center justify-center p-2 mx-auto mb-3 cursor-pointer hover:underline"
-                            href="/registration">RESULTS</a>
+                            href="/student">RESULTS</a>
 
 
                     </li>
                     <li>
                         <a class="flex items-center justify-center p-2 mx-auto mb-3 cursor-pointer hover:underline"
-                            href="/registration">REGISTER SEMESTER</a>
+                            href="/student">REGISTER SEMESTER</a>
 
 
                     </li>
